@@ -44,7 +44,7 @@ screenshots
 ## How to Run Locally
 
 ```bash
-git clone https://github.com/[Hanzala-code]/churn-risk-advisor
+git clone https://github.com/Hanzala-code/churn-risk-advisor
 cd churn-risk-advisor
 python -m venv .venv
 .venv\Scripts\activate          # Windows
@@ -59,7 +59,7 @@ streamlit run app.py
 - Median tenure: churners 10 months vs stayers 38 months
 - Key finding: contract type and tenure are the strongest early signals
 
-📓 [Week 1 Notebook — EDA]((https://github.com/Hanzala-code/applied-ai-project1-churn/blob/main/week-1-customer-churn-eda.ipynb)])
+📓 [Week 1 Notebook — EDA](https://github.com/Hanzala-code/applied-ai-project1-churn/blob/main/week-1-customer-churn-eda.ipynb)
 
 ---
 
@@ -118,7 +118,7 @@ streamlit run app.py
 - Biggest lesson: a single train/test split can swing ±0.024 accuracy
   on the same model and data — always report CV mean ± std
 
-📓 [Week 3 Notebook — Optimization]((https://github.com/Hanzala-code/applied-ai-project1-churn/blob/main/week-3-model-optimization.ipynb))
+📓 [Week 3 Notebook — Optimization](https://github.com/Hanzala-code/applied-ai-project1-churn/blob/main/week-3-model-optimization.ipynb)
 
 ---
 
