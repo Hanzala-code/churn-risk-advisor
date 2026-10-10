@@ -25,12 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent
 
 @st.cache_resource
 def load_artifacts():
-    model = xgb.XGBClassifier()
-    model.load_model(str(BASE_DIR / "churn_model.json"))
-
-    with open(BASE_DIR / "model_meta.json", encoding="utf-8") as f:
+    model = joblib.load('churn_model.joblib')  # ← only this line
+    with open('model_meta.json') as f:
         meta = json.load(f)
-
     return model, meta
 
 
