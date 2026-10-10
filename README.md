@@ -32,15 +32,26 @@ with a parity test across all 7,043 customers (largest difference: 0.0).
 **Owner and version:** Hanzala, v1.0, October 2026.
 
 ---
-
-## Live App
-
-🔗 **[Churn Risk Advisor — Live on Streamlit]([your Streamlit URL here])**
-
-> Open in a private browser window to confirm it works for strangers.
+screenshots 
 
 ---
 
+## Live App
+
+🔗 **[Churn Risk Advisor — Live on Streamlit](https://churn-risk-advisor-hanzala-code.streamlit.app/)**
+
+---
+## How to Run Locally
+
+```bash
+git clone https://github.com/[Hanzala-code]/churn-risk-advisor
+cd churn-risk-advisor
+python -m venv .venv
+.venv\Scripts\activate          # Windows
+# source .venv/bin/activate     # Mac/Linux
+pip install -r requirements.txt
+streamlit run app.py
+```
 ## Week 1: Exploratory Data Analysis
 
 - Dataset: 7,043 customers, 21 raw features, 26.5% churn rate
@@ -48,7 +59,7 @@ with a parity test across all 7,043 customers (largest difference: 0.0).
 - Median tenure: churners 10 months vs stayers 38 months
 - Key finding: contract type and tenure are the strongest early signals
 
-📓 [Week 1 Notebook — EDA]([your Kaggle link])
+📓 [Week 1 Notebook — EDA]((https://github.com/Hanzala-code/applied-ai-project1-churn/blob/main/week-1-customer-churn-eda.ipynb)])
 
 ---
 
@@ -67,7 +78,7 @@ with a parity test across all 7,043 customers (largest difference: 0.0).
 - Biggest lesson: accuracy is a misleading metric on imbalanced data —
   a model that catches zero churners can still score 73.5%
 
-📓 [Week 2 Notebook — ML Models]([your Kaggle link])
+📓 [Week 2 Notebook — ML Models](https://github.com/Hanzala-code/applied-ai-project1-churn/blob/main/week-2-building-ml-models.ipynb)
 
 ---
 
@@ -107,23 +118,7 @@ with a parity test across all 7,043 customers (largest difference: 0.0).
 - Biggest lesson: a single train/test split can swing ±0.024 accuracy
   on the same model and data — always report CV mean ± std
 
-📓 [Week 3 Notebook — Optimization]([your Kaggle link])
-
----
-
-## Week 4: From Notebook to Product
-
-- Skew bug found and fixed: drop_first=True on a single Two year contract
-  customer gave P(churn) = 0.136 instead of the correct 0.012 — a 10x error
-  with no warning raised
-- Parity test: largest difference = 0.0 across all 7,043 customers ✓
-- What-if analysis on riskiest customer (baseline P = 0.935):
-  - Contract = One year → 0.862 (−0.073)
-  - Contract = Two year → 0.765 (−0.170)
-  - Payment = Credit card → 0.913 (−0.022)
-- App deployed to Streamlit Community Cloud: [your URL]
-
-📓 [Week 4 Notebook — Packaging]([your Kaggle link])
+📓 [Week 3 Notebook — Optimization]((https://github.com/Hanzala-code/applied-ai-project1-churn/blob/main/week-3-model-optimization.ipynb))
 
 ---
 
@@ -178,18 +173,6 @@ compare 6-month actual churn rates.
 
 ---
 
-## How to Run Locally
 
-```bash
-git clone https://github.com/[your-username]/churn-risk-advisor
-cd churn-risk-advisor
-python -m venv .venv
-.venv\Scripts\activate          # Windows
-# source .venv/bin/activate     # Mac/Linux
-pip install -r requirements.txt
-streamlit run app.py
-```
 
----
 
-## Repository Structure
