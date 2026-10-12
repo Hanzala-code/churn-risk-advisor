@@ -32,7 +32,14 @@ with a parity test across all 7,043 customers (largest difference: 0.0).
 **Owner and version:** Hanzala, v1.0, October 2026.
 
 ---
-screenshots 
+## Screenshots:
+
+Individual Result:
+<img width="1855" height="981" alt="Screenshot 2026-10-09 185833" src="https://github.com/user-attachments/assets/c956e397-0305-46ae-9e38-341887145563" />
+
+Batch Result:
+
+<img width="1847" height="991" alt="Screenshot 2026-10-09 185959" src="https://github.com/user-attachments/assets/3b57a298-32e7-4e05-b47f-7e17370d71b3" />
 
 ---
 
